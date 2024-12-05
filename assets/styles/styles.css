@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* kotainer navbar */
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #232366;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* mavbar text */
+.container-navbar ul li a:hover {
+    background-color: white;
+    color: rgb(35, 35, 102);
+    padding: 10px;
+    border-radius: 8px;
+}
+.container-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+} 
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 14px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+.kiri {
+    color: white;
+    font-size: 18px;
+}
+.kanan {
+    color: blue;
+    font-size: 18px;
+}
+/* kontainer hero */
+
+.container-hero {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: white;
+    position: relative;
+    transition: all 3s ease-in-out;
+}
+
+
+.container-hero:hover {
+    background-color: rgb(37, 5, 153);
+}
+
+.container-hero>h1 {
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline 5px blue;
+}
+
+.container-hero>p {
+    font-size: 20px;
+}
+
+/* button kontainer hero  */
+
+.gbg {
+    font-size: 18px;
+    padding: 15px;
+    width: 200px;
+    border: transparent;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    box-shadow: 1px 1px 5px 1px white;
+    cursor: pointer;
+    animation: gbgloncat 3s infinite;
+}
+
+.gbg:hover {
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+    color: black;
+}
+
+/* kontainer konten 1*/
+
+.container-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(75,189,216,255);
+    height: auto;
+    padding: 100px;
+}
+
+/* background elemen LOGIN konten di kontainer */
+.konten0 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 25px;
+    justify-content: flex-start;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+
+.konten0:hover {
+    position: static;
+    background-color: whitesmoke;
+    z-index: 0;
+}
+
+.konten0>.logklik {
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgba(75,189,216,255);
+}
+
+/* SIGN IN CARD */
+.konten1 {
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+
+.konten1 h1 {
+    color: rgba(75,189,216,255);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.garis {
+    background-color: grey;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.konten1>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.konten1>form input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 18px;
+}
+
+.konten1>form input:focus {
+    background-color: black;
+    color: rgba(75,189,216,255);
+}
+
+.konten1>form label {
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: rgba(75,189,216,255);
+}
+
+.konten1>form button {
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(75,189,216,255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.konten1>form button:hover {
+    padding: -10px;
+}
+
+.daftar>button {
+    margin-top: 20px;
+}
+
+.container-content2 {
+    background-color: black;
+    padding: 5px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-content2 > .konten2 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 50px;
+}
+
+.container-content2 > .konten3 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.konten3 a > img {
+    border: 5px solid white;
+}
+
+.konten2 > p {
+    font-size: 50px;
+    font-weight: bolder;
+    color: aqua;
+}
+
+footer {
+    background-color: rgb(35, 35, 102);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* footer > p {
+    font-size: 30px;
+} */
+
+@keyframes gbgloncat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
